@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.pranavgor.scarnedice.MainActivity">
+
+    <ImageView
+        android:id="@+id/dice"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/dice4" />
+
+    <TextView
+        android:id="@+id/score_comp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/computer"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_toEndOf="@+id/hold"
+        android:layout_toRightOf="@+id/hold"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/score_user"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="83dp"
+        android:layout_below="@+id/user"
+        android:textColor="@color/colorPrimary" />
+
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dice"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="28dp"
+        android:text="User score"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/computer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/user"
+        android:layout_alignBottom="@+id/user"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:text="Computer score"
+        android:textColor="@color/colorPrimary" />
+
+
+    <Button
+        android:id="@+id/roll"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:text="Roll"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="82dp"
+        android:layout_marginTop="50dp"
+        android:text="Reset"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/hold"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="164dp"
+        android:layout_marginTop="50dp"
+        android:text="Hold"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/who_won"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="122dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="322dp"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/turn_score_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorPrimary" />
+
+
+</RelativeLayout>
